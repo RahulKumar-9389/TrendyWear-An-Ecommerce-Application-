@@ -1,0 +1,337 @@
+/* ============== ADMIN DASHBOARD ================ */
+@media only screen and (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* ================ HEADER ================= */
+    #header {
+        padding: 1rem 1.5rem;
+        height: fit-content;
+    }
+
+    #header .logo img {
+        height: 6rem;
+    }
+
+    .mid_menu {
+        display: none;
+    }
+
+    .showMenu {
+        display: block;
+    }
+
+    .right_menu {
+        display: none;
+    }
+
+    /* ================ BANNER =============  */
+
+    #banner {
+        height: 60vh;
+    }
+
+    #banner h1 {
+        font-size: 2.7rem;
+    }
+
+    #banner p {
+        font-size: 1.7rem;
+    }
+
+    #banner .search_box {
+        width: 350px;
+    }
+
+
+    /* ================= categories ========== */
+    .categories_container,
+    .top_products_wrapper {
+        padding: 2rem;
+    }
+
+    .top_products_wrapper .product_card {
+        width: 100%;
+    }
+
+    .category {
+        width: 93%;
+    }
+
+    .offer_wrapper {
+        padding: 0;
+    }
+
+    .offer_container {
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding: 1rem .2rem;
+    }
+
+    .offer_container .offer_text {
+        width: 100%;
+    }
+
+    .offer_text h1 {
+        font-size: 2.5rem;
+    }
+
+    .offer_text p {
+        text-align: center;
+    }
+
+    .offer_container img {
+        height: 200px;
+    }
+
+    .offer_text button {
+        margin: auto;
+        margin-top: 2rem;
+        width: 80%;
+        border-radius: .3rem;
+        margin-bottom: 2rem;
+    }
+
+    /* ================ FOOTER ========== */
+    #footer {
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    #footer .col2,
+    #footer .col3 {
+        display: none;
+    }
+
+
+
+    /* =================== REGISTER =========== */
+    #register {
+        flex-direction: column-reverse;
+        height: fit-content;
+        justify-content: start;
+        padding: 2rem 0;
+    }
+
+
+
+    #register .left,
+    #register .right {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .input_box input {
+        width: 350px;
+    }
+
+
+    /* ========= USER DASHBOARD ============== */
+    .user_dashboard_container {
+        padding: 2rem 0;
+    }
+
+    table {
+        position: relative;
+    }
+
+
+    thead {
+        display: none;
+    }
+
+    table td {
+        display: block;
+    }
+
+    table td {
+        text-align: right;
+        padding-right: 1rem !important;
+    }
+
+    .success,
+    .failed {
+        width: fit-content;
+        float: right;
+        padding: 0 1rem;
+    }
+
+    table td::before {
+        position: absolute;
+        content: attr(aria-label);
+        left: 1rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: #000;
+    }
+
+    .user_actions_container table td:nth-child(4) {
+        display: none;
+        border: 2px solid !important;
+    }
+
+    .user_profile_container input {
+        width: 350px;
+    }
+
+    /* ============== ABOUT ============ */
+    .about_container {
+        padding: 2rem;
+        height: fit-content;
+    }
+
+    .about_details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_container img {
+        height: 200px;
+    }
+
+    .about_details h2 {
+        font-size: 1.9rem;
+    }
+
+    .about_details p {
+        font-size: 1.5rem;
+    }
+
+    .about_details p span {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .about_icon {
+        display: none;
+    }
+
+    .about_container h1 {
+        margin: 1rem 0;
+    }
+
+    .about_container h1::before {
+        width: 300px;
+    }
+
+
+    /* ============== PRODUCTS ============ */
+    #products {
+        padding: 2rem;
+    }
+
+    .filters_container {
+        display: none;
+    }
+
+    .products_container {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+
+    .single_product_container {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .single_product_container img {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .product_details {
+        width: 100%;
+    }
+
+    .mobile_filters .filters_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .filter_icon {
+        display: block;
+
+    }
+
+
+    /* ============ CART ============= */
+    #cart {
+        padding: 1rem;
+    }
+
+    #cart table {
+        border-radius: 0px;
+    }
+
+    .cart_table_container {
+        padding: 0;
+    }
+
+    .quantity {
+        justify-content: flex-end;
+    }
+
+    .chekout_container {
+        width: 100%;
+    }
+
+    #search_page {
+        padding: 2rem;
+    }
+
+
+    /* ==================== ADMIN DASHBOARD =================== */
+
+    .admin_dashboard_wrapper .left {
+        position: fixed;
+        top: 0;
+        left: 0px;
+        z-index: 999;
+        width: 300px;
+    }
+
+    .menu_icon_container {
+        display: block;
+    }
+
+    .widget_container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem;
+    }
+
+    .charts_container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .chart1,
+    .chart2 {
+        width: 100%;
+    }
+
+    .admin_products_container,
+    .admin_orders_table {
+        padding: 2rem;
+    }
+
+    .add_product_container form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .add_product_container input,
+    .add_product_container button {
+        width: 350px;
+    }
+
+}
